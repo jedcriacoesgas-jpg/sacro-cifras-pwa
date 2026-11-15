@@ -1,0 +1,34 @@
+SACRO CIFRAS 2.0 — PACOTE PWA
+
+O QUE ESTE PACOTE FAZ
+- Cria um instalador PWA com nome e ícones próprios.
+- Abre o sistema Google Apps Script diretamente em uma janela independente.
+- Mantém em cache apenas a estrutura do instalador; o sistema em si exige internet.
+
+HOSPEDAGEM RECOMENDADA: GITHUB PAGES
+1. Entre em https://github.com e crie um repositório público chamado sacro-cifras-pwa.
+2. Extraia este ZIP no computador.
+3. Envie TODOS os arquivos e a pasta icons para a raiz do repositório.
+   A estrutura deve ficar:
+   index.html
+   manifest.webmanifest
+   sw.js
+   icons/icon-192.png
+   icons/icon-512.png
+4. No GitHub, abra Settings > Pages.
+5. Em Build and deployment, escolha Deploy from a branch.
+6. Selecione a branch main e a pasta /(root), depois Save.
+7. Aguarde a publicação. O GitHub mostrará um endereço parecido com:
+   https://SEU-USUARIO.github.io/sacro-cifras-pwa/
+8. Abra esse endereço no Chrome do Android ou no Edge/Chrome do computador.
+9. Use o menu do navegador > Instalar aplicativo (ou Adicionar à tela inicial).
+
+IMPORTANTE
+- Não instale pelo endereço do Blogspot: este pacote PWA será servido pelo GitHub Pages,
+  que consegue hospedar o manifesto e o service worker no mesmo domínio da instalação.
+- O Blogspot continua como site institucional/divulgação.
+- O aplicativo é uma janela PWA que incorpora o endereço do Apps Script.
+- A autenticação e o funcionamento do sistema continuam dependendo do Google Apps Script
+  e de conexão com a internet.
+- Se o iframe do Apps Script não carregar em algum navegador/dispositivo, use o botão
+  "Problemas para abrir? Toque aqui", que abre o sistema diretamente em outra aba.
